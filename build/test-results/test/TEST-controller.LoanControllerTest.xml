@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="controller.LoanControllerTest" tests="4" skipped="0" failures="2" errors="0" timestamp="2024-07-18T06:41:20" hostname="Shivams-MacBook-Air.local" time="2.087">
+  <properties/>
+  <testcase name="testGetLoans()" classname="controller.LoanControllerTest" time="1.808">
+    <failure message="jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.security.core.userdetails.UserDetails" type="jakarta.servlet.ServletException">jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.security.core.userdetails.UserDetails
+	at app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at app//org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at app//org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at app//org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at app//org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at app//controller.LoanControllerTest.testGetLoans(LoanControllerTest.java:103)
+	at java.base@22.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@22.0.1/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base@22.0.1/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.security.core.userdetails.UserDetails
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	... 12 more
+</failure>
+  </testcase>
+  <testcase name="testRepayLoan()" classname="controller.LoanControllerTest" time="0.177"/>
+  <testcase name="testApproveLoan()" classname="controller.LoanControllerTest" time="0.029"/>
+  <testcase name="testApplyForLoan()" classname="controller.LoanControllerTest" time="0.066">
+    <failure message="jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.security.core.userdetails.UserDetails" type="jakarta.servlet.ServletException">jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.security.core.userdetails.UserDetails
+	at app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at app//org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at app//org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at app//org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at app//org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at app//org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at app//controller.LoanControllerTest.testApplyForLoan(LoanControllerTest.java:57)
+	at java.base@22.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@22.0.1/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base@22.0.1/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.security.core.userdetails.UserDetails
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:265)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:924)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	... 12 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[12:11:22.693 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+12:11:22.694 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+12:11:22.697 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 1 ms
+12:11:22.813 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+12:11:22.814 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+12:11:22.814 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+12:11:22.997 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+12:11:22.997 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+12:11:22.998 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+12:11:23.022 [Test worker] INFO org.springframework.mock.web.MockServletContext -- Initializing Spring TestDispatcherServlet ''
+12:11:23.022 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Initializing Servlet ''
+12:11:23.022 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet -- Completed initialization in 0 ms
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/shivamchauhan/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.17/e3c251a39dc90badaf71c83427ba46840f219d8d/byte-buddy-agent-1.14.17.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
